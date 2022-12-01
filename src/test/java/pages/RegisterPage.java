@@ -15,8 +15,8 @@ public class RegisterPage {
   By selectDOBYear = By.xpath("//select[@id='user_dateofbirth_1i']");
   By selectDOBMonth = By.xpath("//select[@id='user_dateofbirth_2i']");
   By selectDOBDate = By.xpath("//select[@id='user_dateofbirth_3i']");
-  By inputLicenceTypeT = By.xpath("//input[@id='licencetype_t']");
-  By inputLicenceTypeF = By.xpath("//input[@id='licencetype_f']");
+  By inputLicenceTypeT = By.xpath("//label[@for='licencetype_t']");
+  By inputLicenceTypeF = By.xpath("//label[@for='licencetype_f']");
   By selectLicensePeriod = By.xpath("//select[@id='user_licenceperiod']");
   By selectOccupation = By.xpath("//select[@id='user_occupation_id']");
   By inputStreet = By.xpath("//input[@id='user_address_attributes_street']");
@@ -29,7 +29,7 @@ public class RegisterPage {
   By btnReset = By.xpath("//input[@id='resetform']");
   By btnCreate = By.xpath("//input[@name='submit']");
   
-  RegisterPage(WebDriver driver) {
+  public RegisterPage(WebDriver driver) {
     this.driver = driver;
   }
 
@@ -117,7 +117,7 @@ public class RegisterPage {
     driver.findElement(btnReset).click();
   }
 
-  public void setBtnCreate() {
+  public void clickCreate() {
     driver.findElement(btnCreate).click();
   }
 

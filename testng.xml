@@ -3,12 +3,8 @@
 <suite name="Assurance">
   <test thread-count="5" name="Authentication Test Module">
     <classes>
-      <class name="com.asuransijiwa.assurance.AppTest"/>
+      <class name="authentication.AuthenticationRunner"/>
     </classes>
   </test> <!-- Test -->
-  <test thread-count="5" name="Quotation Test Module">
-    <classes>
-      <class name="com.asuransijiwa.assurance.AppTest"/>
-    </classes>
-  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

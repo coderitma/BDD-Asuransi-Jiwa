@@ -13,11 +13,11 @@ public class LoginPage {
     this.driver = driver;
   }
   
-  public void isiEmail(String email) {
+  public void setEmail(String email) {
     driver.findElement(inputEmail).sendKeys(email);
   }
   
-  public void isiPassword(String password) {
+  public void setPassword(String password) {
     driver.findElement(inputPasswod).sendKeys(password);
   }
   
