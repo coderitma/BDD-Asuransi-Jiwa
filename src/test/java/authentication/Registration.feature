@@ -1,6 +1,6 @@
-Feature: Authentication register
+Feature: Authentication 01
 
-  Scenario: Register user
+  Scenario: Auth 01
     Given Masuk ke halaman register "https://demo.guru99.com/insurance/v1/register.php"
     When Mengisi title "Captain"
     And Mengisi first name "Yanwar"

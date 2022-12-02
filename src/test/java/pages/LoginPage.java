@@ -8,8 +8,9 @@ public class LoginPage {
   By inputEmail = By.xpath("//input[@id=\"email\"]");
   By inputPasswod = By.xpath("//input[@id=\"password\"]");
   By btnLogin = By.xpath("//input[@name=\"submit\"]");
+  By h2WelcomeMessage = By.xpath("//h2[text()='Broker Insurance WebPage']");
   
-  LoginPage(WebDriver driver) {
+   public LoginPage(WebDriver driver) {
     this.driver = driver;
   }
   
@@ -24,4 +25,10 @@ public class LoginPage {
   public void clickLogin() {
     driver.findElement(btnLogin).click();
   }
+  
+  public String getWelcome() {
+    return driver.findElement(h2WelcomeMessage).getText();
+  }
+  
+  
 }
